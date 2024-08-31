@@ -2,4 +2,11 @@ body {
     font-family: Georgia, serif;
     font-weight: 400;
     margin: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(246,195,70,1) 0%, rgba(233,222,250,1) 100%);
+    text-align: center;
+}
+
+h1 {
+    margin: 3rem 0;
 }
