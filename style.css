@@ -11,9 +11,19 @@ h1 {
     margin: 3rem 0;
 }
 
-.basic-link {
+.gallery-button {
     color: inherit;
     font-size: 1.5rem;
+    border: 2px solid beige;
+    border-radius: 10px;
+    padding: 0.1rem 1rem;
+    text-decoration: none;
+    background-color: beige;
+    margin-bottom: 1rem;
+}
+
+.gallery-button:hover {
+    background-color: transparent;
 }
 
 @media (max-width: 768px) {
