@@ -10,8 +10,8 @@ const loadFrames = async (path) => {
     }
   };
 
-// build image path from pageName and imageFilename (e.g. "arad" -> "../assets/arad/image.jpg")
-const buildImagePath = (pageName, imageFilename) => (`../assets/${pageName}/${imageFilename}`)
+// build image path from pageName and imageFilename (e.g. "arad" -> "assets/arad/image.jpg")
+const buildImagePath = (pageName, imageFilename) => (`assets/${pageName}/${imageFilename}`)
 
 const imagesContainer = document.querySelector('#images')
 const imageContainer = imagesContainer.querySelector('img')
@@ -29,7 +29,7 @@ const renderNewFrame = (pageName, frames, newFrameIndex) => {
 }
 
 const initializeGallery = async (pageName) => {
-  const path = `../data/${pageName}.json`
+  const path = `data/${pageName}.json`
   const frames = await loadFrames(path)
 
   if (frames.length === 0) {
